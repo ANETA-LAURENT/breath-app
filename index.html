@@ -3,23 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/favicon.png" />
+
     <title>Breathe app</title>
   </head>
   <body>
     <h1>SQUARE BREATHING APPLICATION</h1>
-    <button class="button">Start</button>
-    <div class="container paused">
-      <div class="circle"></div>
-      <p class="text"></p>
-      <div class="pointer-container paused">
-        <span class="pointer"></span>
-      </div>
-      <div class="gradient-circle"></div>
+    <div class="video-container shown">
+      <video src="video/fish.mp4" paused  loop ></video>
     </div>
+    <div class="image-container disappeared"><image src="img/ryby.jpg" ></div>
+    <section class="showcase">
+      <div class ="time-content">
+        <div class="timer">
+          <span class="minutes">00</span> : <span class="seconds">00</span>
+        </div>
+    </div>     
+      <div class="app-content">
+        <div class="button-container">
+          <button class="start">Start</button>
+         <!--  <button class="stop">Stop</button> -->
+          <button class="reset">Reset</button> 
+        </div>
+        <div class="container paused">
+          <div class="gradient-circle"></div>
+          <div class="circle"></div>
+          <p class="text"></p>
+          <div class="pointer-container paused">
+            <span class="pointer"></span>
+          </div> 
+        </div>
+      
+      </div>
+      <div class="change-content">
+        <button class="btn-image"><img id="myImg" src="img/stop-video.png" ></img></button>
+       
+      </div>
+    </section> 
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <script src="conic-gradient.js"></script>
-    <script src="script.js"></script>
+    <script src="js/conic-gradient.js"></script>
+    <script src="js/script.js"></script>
   </body>
-  <footer> Based on Brad Traversy tutorial from '20 Web Projects With Vanilla JavaScript' cours <footer>
-    </html>
+</html>
