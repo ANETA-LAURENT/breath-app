@@ -8,7 +8,6 @@ const pointer = document.querySelector(".pointer-container");
 const stopVideoBtn = document.getElementById("myImg");
 
 const startBtn  = document.querySelector('.start');
-const stopBtn   = document.querySelector('.stop');
 const resetBtn  = document.querySelector('.reset');
 
 
@@ -29,7 +28,6 @@ let interval;
 // event listeners
 stopVideoBtn.addEventListener("click", changeToImage);
 startBtn.addEventListener('click', startBreath);
-/* stopBtn.addEventListener('click', stopTimer); */
 resetBtn.addEventListener('click', resetTimer);
 
 
